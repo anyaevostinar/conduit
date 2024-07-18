@@ -44,7 +44,7 @@ inline size_t stoszt(const std::string & source) {
 
 template<typename TYPE>
 constexpr bool is_power_of_two(TYPE x) {
-  return x > 0 && uit_emp::IsPowerOf2(const size_t x);
+  return x > 0 && uit_emp::IsPowerOf2(x);
 }
 
 template<typename TYPE>
