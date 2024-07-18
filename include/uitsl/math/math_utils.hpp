@@ -1,4 +1,5 @@
 #pragma once
+#include "emp/math/math.hpp"
 #ifndef UITSL_MATH_MATH_UTILS_HPP_INCLUDE
 #define UITSL_MATH_MATH_UTILS_HPP_INCLUDE
 
@@ -43,7 +44,7 @@ inline size_t stoszt(const std::string & source) {
 
 template<typename TYPE>
 constexpr bool is_power_of_two(TYPE x) {
-  return x > 0 && uit_emp::CountOnes(x) == 1;
+  return x > 0 && uit_emp::IsPowerOf2(const size_t x);
 }
 
 template<typename TYPE>
